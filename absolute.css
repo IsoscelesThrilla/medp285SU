@@ -1,0 +1,81 @@
+/* CSS Document */
+
+/*
+An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).
+However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+	font: normal 12pt arial;
+	line-height: 1.5em;
+	color: #000000;
+}
+
+p, ul, li {
+	font: normal 12pt arial;
+	color: #000000;
+}
+
+a, a:visited, a:active {
+	font: bold 11px arial;
+	color: #990000;
+	text-decoration: none;
+	border: 0px;
+}
+
+a:hover {
+	font: bold 12px arial;
+}
+
+/*layout containers*/
+
+#container {
+		position: absolute;
+		top: 0px;
+		left:10px;
+		width:800px;
+		border: solid 1px #000000;
+		}
+
+header {
+	position: absolute;
+	top: 5px;
+	left:10px;
+	width:770px;
+	height: 100px;
+	border: solid 1px #000000;
+	}
+
+nav {
+		position: absolute;
+		background: #ffffff;
+		left: 570px;
+		top: 115px;
+		width: 200px;
+		height: 450px;
+		padding: 4px;
+		border: 1px solid #333333;
+}
+
+main {
+		position: absolute;
+		background: #ffffff;
+		left: 10px;
+		top: 115px;
+		width: 540px;
+		padding: 4px;
+		border: 1px solid #333333;
+}
+
+footer {
+	position: absolute;
+	top: 580px;
+	left:10px;
+	width:770px;
+	height: 40px;
+	border: solid 1px #000000;
+}
