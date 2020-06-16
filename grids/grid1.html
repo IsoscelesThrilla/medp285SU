@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <title>Grid 1</title>
+	  <style>
+		* {
+		    box-sizing: border-box;
+        font-size: 20px;
+        font-family: helvetica
+        justify: left;
+		}
+    div { border: 1px solid black; text-align: center;}
+    #layout {
+      display: grid;
+      grid-template-rows: 100px 100px 100px;
+      grid-gap: 2em;
+      grid-column-gap: 10px;
+      grid-row-gap: 30px;
+      justify-content: space-evenly;
+      max-width: 80vw;
+      min-height: 90vh;
+      margin: auto;
+      background-color: grey;
+    }
+    #item1 {
+      grid-column: 1/3;
+      grid-row: 1/4;
+      background-color: black;
+    }
+    #item2 {
+      background-color: gray;
+    }
+    </style>
+
+  </head>
+
+  <body>
+
+      <div id="layout">
+
+        <div id="item1"><video width="760" height="355" controls><source src="video/winter.mp4"
+          type="video/mp4"></div>
+        <div id="item2"><img src="img/tree.gif"></div>
+        <div id="three"><p>
+            Hear the sledges with the bells --
+            Silver bells!
+            What a world of merriment their melody foretells!
+            How they tinkle, tinkle, tinkle,
+            In the icy air of night!
+            While the stars that oversprinkle
+            All the heavens, seem to twinkle
+            With a crystalline delight;
+            Keeping time, time, time,
+            In a sort of Runic rhyme,
+            To the tintinnabulation that so musically wells
+            From the bells, bells, bells, bells,
+            Bells, bells, bells --
+            From the jingling and the tinkling of the bells.</p></div>
+
+      </div>
+
+      <a href="https://isoscelesthrilla.github.io/medp285SU/">Click to go back home.</a>
+  </body>
+</html>
