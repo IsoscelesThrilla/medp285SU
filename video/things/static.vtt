@@ -1,0 +1,19 @@
+WEBVTT
+
+STYLE
+::cue {
+  color: red;
+  font-family:"Helvetica". sans-serif;
+}
+
+1
+00:00:01.000 --> 00:00:04.000
+Turn Off Your Devices.
+
+2
+00:00:04.000 --> 00:00:09.000
+They Are Watching You.
+
+3
+00:00:09.000 --> 00:00:15.000
+They Are Controlling You.
