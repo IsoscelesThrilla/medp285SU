@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Animation</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        box-sizing: border-box;
+        background-color: black;
+      }
+      body {
+        overflow: hidden;
+      }
+      /* Text Animations */
+      @keyframes topFadeOut {
+        0% {
+          position: absolute;
+          top: -10%;
+          opacity: 0;
+        }
+        75% {
+          position: absolute;
+          top: 25%;
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+      @keyframes bottomFadeOut {
+        0% {
+          position: absolute;
+          bottom: -10%;
+          opacity: 0;
+        }
+        75% {
+          position: absolute;
+          bottom: 25%;
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+      @keyframes topFadeOutVertical {
+        0% {
+          position: absolute;
+          top: -10%;
+          opacity: 0;
+        }
+        75% {
+          position: absolute;
+          top: 45%;
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+      @keyframes rightFadeInOut {
+        0% {
+          position: absolute;
+          right: -10%;
+          opacity: 0;
+        }
+        75% {
+          position: absolute;
+          right: 10%;
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+          right: 10%;
+        }
+      }
+      @keyframes fadeInOut {
+        0% {
+          opacity: 0;
+        }
+        45% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+      /* rem is root em */
+      .first-text {
+        font-family: Palatino Linotype;
+        font-size: 4em;
+        position: absolute;
+        left: 5%;
+        top: 30%;
+        color: #8b0000;
+        opacity: 0;
+        animation-name: topFadeOut;
+        animation-duration: 7s;
+      }
+
+      .second-text {
+        font-family: Palatino Linotype;
+        font-size: 3em;
+        position: absolute;
+        top: 10%;
+        color: #8b0000;
+        opacity: 0;
+        animation-name: rightFadeInOut;
+        animation-delay: 3s;
+        animation-duration: 7s;
+      }
+
+      .third-text {
+        font-family: Palatino Linotype;
+        font-size: 3em;
+        position: absolute;
+        left: 45%;
+        top: 45%;
+        color: #8b0000;
+        white-space: nowrap; /*no line break*/
+        opacity: 0;
+        animation-name: bottomFadeOut;
+        animation-delay: 7s;
+        animation-duration: 7s;
+      }
+      .fourth-text {
+        font-family: Palatino Linotype;
+        font-size: 4em;
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        color: #8b0000;
+        opacity: 0;
+        animation-name: fadeInOut;
+        animation-delay: 10s;
+        animation-duration: 7s;
+      }
+
+      .fifth-text {
+        font-family: Palatino Linotype;
+        font-size: 5em;
+        position: absolute;
+        left: 5%;
+        bottom: 25%;
+        color: #8b0000;
+        opacity: 0;
+        animation-name: rightFadeInOut;
+        animation-delay: 13s;
+        animation-duration: 7s;
+      }
+      .sixth-text {
+        font-family: Palatino Linotype;
+        font-size: 5em;
+        position: absolute;
+        left: 5%;
+        bottom: 25%;
+        color: #8b0000;
+        opacity: 0;
+        animation-name: rightFadeInOut;
+        animation-delay: 19s;
+        animation-duration: 7s;
+      }
+      .seventh-text {
+        font-family: Palatino Linotype;
+        font-size: 5em;
+        position: absolute;
+        left: 5%;
+        bottom: 25%;
+        color: #8b0000;
+        opacity: 0;
+        animation-name: topFadeOut;
+        animation-delay: 22s;
+        animation-duration: 7s;
+      }
+      .eigth-text {
+        font-family: Palatino Linotype;
+        font-size: 5em;
+        position: absolute;
+        left: 5%;
+        bottom: 25%;
+        color: #8b0000;
+        opacity: 0;
+        animation-name: bottomFadeOut;
+        animation-delay: 25s;
+        animation-duration: 5s;
+      }
+      .ninth-text {
+        font-family: Palatino Linotype;
+        font-size: 5em;
+        position: absolute;
+        left: 5%;
+        bottom: 25%;
+        color: #8b0000;
+        opacity: 0;
+        animation-name: bottomFadeOut;
+        animation-delay: 28s;
+        animation-duration: 10s;
+      }
+      .tenth-text {
+        font-family: Palatino Linotype;
+        font-size: 6em;
+        position: absolute;
+        left: 5%;
+        bottom: 25%;
+        color: #8b0000;
+        opacity: 0;
+        animation-name: fadeInOut;
+        animation-delay: 33s;
+        animation-duration: 10s;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="first-text">Through me you pass into the city of woe</div>
+    <div class="second-text">Through me you pass into eternal pain</div>
+    <div class="third-text">Through me among the people lost for aye</div>
+    <div class="fourth-text">Justice the founder of my fabric moved</div>
+    <div class="fifth-text">To rear me was the task of power divine</div>
+    <div class="sixth-text">Supremest wisdom, and primeval love.</div>
+    <div class="seventh-text">
+      Before me things create were none, save things Eternal,
+    </div>
+    <div class="eigth-text">and eternal I shall endure</div>
+    <div class="ninth-text">All hope abandon, ye who enter here</div>
+    <div class="tenth-text">Dante Alighieri, The Divine Comedy</div>
+  </body>
+</html>
