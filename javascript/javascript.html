@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Basic JS</title>
+    <!--
+      A JavaScript function is a block of code designed to perform a particular task.
+      A JavaScript function is executed when "something" invokes it (calls it).
+      -->
+  </head>
+
+  <body>
+    <script>
+      //variables are containers of data or a way to store values
+      //var is the key term to declare a variables
+      /*
+      Variable names can contain letters, numbers, underscores and dollar signs
+      names must start with a letter or $ or _
+      Variables are case sensitive x vs X are two different characters
+      Reserved words like function can not be used as names
+      */
+      var adj;
+      var noun;
+      var phrase;
+      //the equal sign assigns a variable a value - = - is an assignment operator
+      //to use equal as in math, then you have to use ==
+      adj = prompt("Please enter an adjective.", " ");
+      noun = prompt("Please enter a dog's name.", " ");
+      phrase = prompt("Please enter a food.", " ");
+      //prompt() method displays a dialog box that prompts for visitor input
+      //the html page will write commands - the page is the document, write is a command or method or function
+      document.write(
+        "<p style='color:blue'>Once upon a time, there was a " +
+          adj +
+          " dog named " +
+          noun +
+          " and the dog's favorite food was " +
+          phrase +
+          "." +
+          "</p>"
+      );
+    </script>
+    <a href="https://isoscelesthrilla.github.io/medp285SU/"
+      >Click to go back home.</a
+    >
+  </body>
+</html>
